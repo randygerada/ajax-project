@@ -1,0 +1,20 @@
+.hidden {
+  display: none !important;
+}
+
+.container {
+  max-width: 1920px;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  width: 100%;
+}
+
+.form {
+  text-align: center;
+  padding: 40px 0;
+}
