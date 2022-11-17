@@ -1,6 +1,6 @@
 /* exported data */
 
-var data = {
+/* var data = {
   view: 'entry-form',
   entries: [],
   editing: null,
@@ -15,4 +15,4 @@ if (previousDataJSON !== null) {
 window.addEventListener('beforeunload', function (event) {
   var dataJSON = JSON.stringify(data);
   this.localStorage.setItem('ajax-local-storage', dataJSON);
-});
+}); */

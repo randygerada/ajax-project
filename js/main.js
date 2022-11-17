@@ -6,7 +6,19 @@
 var $api = document.querySelector('.api');
 
 /* login page */
-function login(event) {
+
+var loginPage = document.querySelector('.login-page');
+var mainPage = document.querySelector('.main-page');
+var arrowBtn = document.querySelector('.red-arrow-button');
+
+const loggedIn = function () {
+  event.preventDefault();
+  loginPage.classList.add('hidden');
+  mainPage.classList.remove('hidden');
+};
+
+arrowBtn.addEventListener('click', loggedIn);
+/* function login(event) {
   event.preventDefault();
   var account = {};
   account.userName = form.elements.uname.value;
@@ -19,7 +31,7 @@ function login(event) {
 }
 
 var form = document.querySelector('.form');
-form.addEventListener('submit', login);
+form.addEventListener('submit', login); */
 
 /* modal */
 var modal = document.querySelector('.modal');
