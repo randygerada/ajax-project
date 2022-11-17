@@ -1,6 +1,25 @@
+/* global data */
+/* exported data */
+
 /* queryselector-api */
 
 var $api = document.querySelector('.api');
+
+/* login page */
+function login(event) {
+  event.preventDefault();
+  var account = {};
+  account.userName = form.elements.uname.value;
+  account.passWord = form.elements.psw.value;
+  account.entryId = data.nextEntryId;
+  data.nextEntryId++;
+
+  form.reset();
+
+}
+
+var form = document.querySelector('.form');
+form.addEventListener('submit', login);
 
 /* modal */
 var modal = document.querySelector('.modal');
@@ -14,8 +33,8 @@ const closeModal = function () {
 
 overlay.addEventListener('click', closeModal);
 
-document.addEventListener('keydown', function (e) {
-  if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
     closeModal();
   }
 });

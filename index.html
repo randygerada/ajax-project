@@ -13,9 +13,9 @@
   <header>
   </header>
   <main>
-    <div class="container hidden" data-view="login-form">
+    <div class="container login-div">
       <div class="row">
-        <div class="column form-column">
+        <div class="column form-column" data-view="entry-form">
           <form class="form">
             <img src="images/black-valorant-logo.png" alt="black valorant logo">
             <h2 class="sign-in">Sign In</h2>
@@ -23,13 +23,13 @@
               <label for="uname"></label>
             </div>
             <div class="input-div">
-              <input class="input-text" type="text" placeholder="USERNAME" name="uname" required>
+              <input class="uname" name="uname" id="uname" type="text" placeholder="USERNAME" required>
             </div>
             <div class="label-div">
               <label for="psw"></label>
             </div>
             <div class="input-div">
-              <input class="input-text" type="text" placeholder="PASSWORD" name="psw" required>
+              <input class="psw" name="psw" id="psw" type="text" placeholder="PASSWORD" required>
             </div>
             <div class="button-login">
               <button class="red-arrow-button right-arrow">&rarr;</button>
@@ -44,7 +44,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container homepage-div hidden">
       <div class="row">
         <div class="nav-div">
           <a href="#"><img src="images/valorant-logo.webp" alt="red valorant icon" id="back-home"></a>

@@ -79,6 +79,7 @@ nav > a {
   border-radius: 5px;
   text-align: center;
   font-size: 1em;
+  cursor: pointer;
 }
 
 .add-btn {
