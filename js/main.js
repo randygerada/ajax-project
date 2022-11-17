@@ -1,11 +1,8 @@
 /* global data */
 /* exported data */
 
-/* queryselector-api */
-
 var $api = document.querySelector('.api');
 
-/* login page */
 const loggedIn = function () {
   event.preventDefault();
   loginPage.classList.add('hidden');
@@ -18,7 +15,6 @@ var arrowBtn = document.querySelector('.red-arrow-button');
 
 arrowBtn.addEventListener('click', loggedIn);
 
-/* modal */
 var modal = document.querySelector('.modal');
 var overlay = document.querySelector('.overlay');
 var diffuseModal = document.querySelector('.diffuse');
@@ -43,14 +39,9 @@ const openModal = function () {
 
 diffuseModal.addEventListener('click', openModal);
 
-/** re-roll button
- * has to closeModal();
- * has to reset api;
- */
-var parent = document.querySelector('.api');
 const reset = function () {
-  while (parent.firstChild) {
-    parent.removeChild(parent.firstChild);
+  while ($api.firstChild) {
+    $api.removeChild($api.firstChild);
   }
 };
 
@@ -63,7 +54,6 @@ const rollAgain = function () {
 };
 
 reRoll.addEventListener('click', rollAgain);
-/* api */
 
 function knifeList() {
   var xhr = new XMLHttpRequest();
@@ -71,7 +61,6 @@ function knifeList() {
   xhr.responseType = 'json';
   xhr.addEventListener('load', function () {
 
-    /* information from API */
     var skinListArray = [];
     skinListArray = xhr.response.data.skins;
     var skinList = skinListArray[Math.floor(Math.random() * skinListArray.length)];
@@ -82,7 +71,7 @@ function knifeList() {
     $img.setAttribute('src', knifeIcon);
     $api.appendChild($img);
 
-    var $title = document.createElement('p');
+    var $title = document.createElement('h2');
     $title.textContent = ' "' + knifeName + '" ';
     $api.appendChild($title);
 

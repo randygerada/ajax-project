@@ -45,6 +45,10 @@ nav > a {
   padding-top: 30px;
 }
 
+.spike {
+  width: 600px;
+}
+
 .diffuse-div {
   margin-top: 20px;
 }
@@ -109,6 +113,6 @@ nav > a {
 }
 
 .api > img {
-  width: 50%;
+  width: 40%;
   height: 50%;
 }
