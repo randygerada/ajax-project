@@ -81,14 +81,17 @@ nav > a {
   font-size: 1em;
 }
 
+.add-btn {
+  background-color: red;
+}
+
 .btn-open {
   position: absolute;
 }
 
-.btn-close {
-  margin: 10px;
-  background: #eee;
-  border-radius: 20px;
+.modal-btn-div {
+  width: 100%;
+  justify-content: space-around;
 }
 
 .overlay {
@@ -102,4 +105,9 @@ nav > a {
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(3px);
   z-index: 1;
+}
+
+.api > img {
+  width: 50%;
+  height: 50%;
 }
