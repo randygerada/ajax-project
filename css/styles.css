@@ -1,20 +1,3 @@
-.nav-div {
-  display: flex;
-  background-color: red;
-  width: 100%;
-  padding: 20px;
-}
-
-nav > a {
-  text-decoration: none;
-  color: white;
-}
-
-.nav {
-  font-weight: normal;
-  padding: 10px 30px;
-}
-
 .input-div > input {
   width: 50%;
   padding: 12px 20px;
@@ -32,8 +15,91 @@ nav > a {
   font-size: 30px;
   padding: 10px;
   margin: 20px;
+  cursor: pointer;
+}
+
+/* second page */
+.nav-div {
+  display: flex;
+  background-color: red;
+  width: 100%;
+  padding: 20px;
+}
+
+nav > a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav {
+  font-weight: normal;
+  padding: 10px 30px;
 }
 
 #back-home {
   width: 80px;
+}
+
+.homepage {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.diffuse-div {
+  margin-top: 20px;
+}
+
+.header {
+  display: flex;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  width: 700px;
+  padding: 1.3rem;
+  min-height: 300px;
+  z-index: 2;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.4rem;
+  font-weight: 700;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1em;
+}
+
+.btn-open {
+  position: absolute;
+}
+
+.btn-close {
+  margin: 10px;
+  background: #eee;
+  border-radius: 20px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 1;
 }
