@@ -6,32 +6,17 @@
 var $api = document.querySelector('.api');
 
 /* login page */
-
-var loginPage = document.querySelector('.login-page');
-var mainPage = document.querySelector('.main-page');
-var arrowBtn = document.querySelector('.red-arrow-button');
-
 const loggedIn = function () {
   event.preventDefault();
   loginPage.classList.add('hidden');
   mainPage.classList.remove('hidden');
 };
 
+var loginPage = document.querySelector('.login-page');
+var mainPage = document.querySelector('.main-page');
+var arrowBtn = document.querySelector('.red-arrow-button');
+
 arrowBtn.addEventListener('click', loggedIn);
-/* function login(event) {
-  event.preventDefault();
-  var account = {};
-  account.userName = form.elements.uname.value;
-  account.passWord = form.elements.psw.value;
-  account.entryId = data.nextEntryId;
-  data.nextEntryId++;
-
-  form.reset();
-
-}
-
-var form = document.querySelector('.form');
-form.addEventListener('submit', login); */
 
 /* modal */
 var modal = document.querySelector('.modal');
@@ -58,6 +43,26 @@ const openModal = function () {
 
 diffuseModal.addEventListener('click', openModal);
 
+/** re-roll button
+ * has to closeModal();
+ * has to reset api;
+ */
+var parent = document.querySelector('.api');
+const reset = function () {
+  while (parent.firstChild) {
+    parent.removeChild(parent.firstChild);
+  }
+};
+
+var reRoll = document.querySelector('.re-roll');
+
+const rollAgain = function () {
+  closeModal();
+  reset();
+  knifeList();
+};
+
+reRoll.addEventListener('click', rollAgain);
 /* api */
 
 function knifeList() {
