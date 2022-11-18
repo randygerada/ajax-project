@@ -1,0 +1,21 @@
+.hidden {
+  display: none !important;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  width: 100%;
+}
+
+.form {
+  text-align: center;
+  padding: 40px 0;
+  width: 600px;
+}

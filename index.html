@@ -10,9 +10,83 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-  </header>
+
   <main>
+    <div class="container login-page">
+      <div class="row">
+        <div class="column form-column" data-view="entry-form">
+          <form class="form">
+            <img src="images/black-valorant-logo.png" alt="black valorant logo">
+            <h2 class="sign-in">Sign In</h2>
+            <div class="label-div">
+              <label for="uname"></label>
+            </div>
+            <div class="input-div">
+              <input class="uname" name="uname" id="uname" type="text" placeholder="USERNAME" required>
+            </div>
+            <div class="label-div">
+              <label for="psw"></label>
+            </div>
+            <div class="input-div">
+              <input class="psw" name="psw" id="psw" type="text" placeholder="PASSWORD" required>
+            </div>
+            <div class="button-login">
+              <button class="red-arrow-button right-arrow">&rarr;</button>
+            </div>
+          </form>
+        </div>
+        <div class="column art-column">
+          <div class="splash-div">
+            <img class="img-splash-art" src="images/valorant-login-splash-art.jpeg" alt="valorant-splash-art">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container main-page hidden">
+      <div class="row">
+        <div class="nav-div">
+          <a href="#"><img src="images/valorant-logo.webp" alt="red valorant icon" id="back-home"></a>
+          <nav>
+            <a href="#"><h1 class="nav inventory-nav">Inventory</h1></a>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column homepage">
+          <div class="spike-div">
+            <img class="spike" src="images/in-game-spike.webp" alt="In Game Spike">
+          </div>
+          <div class="diffuse-div">
+            <div class="modal hidden">
+              <div class="header">
+                <h3>Congratulations you have won a random knife!</h3>
+
+              </div>
+              <div class="api">
+
+
+              </div>
+              <div class="row modal-btn-div">
+                <button class="btn re-roll">re-roll</button>
+                <button class="btn add-btn">Add to Inventory</button>
+              </div>
+            </div>
+            <div class="overlay hidden"></div>
+
+            <button class="btn diffuse">Diffuse the Spike!</button>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
   </main>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
